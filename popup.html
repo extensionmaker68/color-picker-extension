@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <header>
+      <h1>Pixel Perfect</h1>
+      <p>Pick & Copy Colors</p>
+    </header>
+
+    <div class="picker-section">
+      <!-- Color Box 1 -->
+      <div class="color-card" id="card-1">
+        <div class="color-preview" id="preview-1" style="background-color: #FFFFFF;">
+          <span class="preview-text">Color 1</span>
+        </div>
+        <div class="color-info">
+          <h2 id="name-1">White</h2>
+          <div class="code-row">
+            <span id="hex-1">#FFFFFF</span>
+            <button class="copy-btn" id="copy-1" title="Copy Code">📋</button>
+          </div>
+          <button class="pick-btn" id="btn-pick-1">🎨 Pick Color 1</button>
+        </div>
+      </div>
+
+      <!-- Color Box 2 -->
+      <div class="color-card" id="card-2">
+        <div class="color-preview" id="preview-2" style="background-color: #FFFFFF;">
+          <span class="preview-text">Color 2</span>
+        </div>
+        <div class="color-info">
+          <h2 id="name-2">White</h2>
+          <div class="code-row">
+            <span id="hex-2">#FFFFFF</span>
+            <button class="copy-btn" id="copy-2" title="Copy Code">📋</button>
+          </div>
+          <button class="pick-btn" id="btn-pick-2">🎨 Pick Color 2</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

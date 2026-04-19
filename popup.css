@@ -1,0 +1,149 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  width: 350px;
+  background-color: #B76E79; /* Rose Gold */
+  color: #FFD700; /* Gold */
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+header p {
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: 300;
+  color: #FFE4E1; /* Misty Rose for subtitle */
+}
+
+/* Card Container */
+.picker-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Color Card Styles */
+.color-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  transition: transform 0.2s ease;
+}
+
+.color-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 215, 0, 0.6);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Color Preview Box */
+.color-preview {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.preview-text {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Color Info Section */
+.color-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.color-info h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #FFF;
+}
+
+/* Hex Code Row */
+.code-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.code-row span {
+  font-family: monospace;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #FFD700;
+}
+
+/* Buttons */
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s;
+  padding: 4px;
+}
+
+.copy-btn:hover {
+  transform: scale(1.2);
+}
+
+.copy-btn:active {
+  transform: scale(0.9);
+}
+
+.pick-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFD700;
+  color: #B76E79;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pick-btn:hover {
+  background-color: #FFEC8B;
+  transform: translateY(-1px);
+}
+
+.pick-btn:active {
+  transform: translateY(1px);
+}
